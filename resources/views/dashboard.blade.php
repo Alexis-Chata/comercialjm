@@ -16,8 +16,16 @@
                                     <form action="{{ route('productos.post') }}" class="py-6" method="post"
                                         enctype="multipart/form-data">
                                         @csrf
-                                        <a class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition mt-4" target="_blank" href="https://docs.google.com/spreadsheets/d/1iDCb6-g33PhLmLBwkveH6m8QRq1kHjQBRys5h4ASjt8/edit?usp=sharing">Formato CSV Subida</a>
-                                        <br>
+                                        <div class="flex justify-between w-full">
+                                            <a class="inline-flex items-center px-4 py-2 bg-cyan-700 border border-transparent rounded-md font-semibold text-xs text-white uppercase hover:bg-cyan-600 active:bg-cyan-900 focus:outline-none focus:border-cyan-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition"
+                                                target="_blank"
+                                                href="https://docs.google.com/spreadsheets/d/1iDCb6-g33PhLmLBwkveH6m8QRq1kHjQBRys5h4ASjt8/edit?usp=sharing">Formato
+                                                CSV Subida</a>
+                                            <a class="inline-flex items-center px-4 py-2 bg-green-700 border border-transparent rounded-md font-semibold text-xs text-white uppercase hover:bg-green-600 active:bg-green-900 focus:outline-none focus:border-green-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition"
+                                                target="_blank"
+                                                href="{{ route('productos.export') }}">Descargar
+                                                Productos</a>
+                                        </div>
                                         <br>
                                         <label for="file" class="cursor-pointer">Subir archivo Productos</label>
                                         <input type="file" name="file" id="file" required

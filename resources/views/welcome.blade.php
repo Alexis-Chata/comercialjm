@@ -35,6 +35,7 @@
                         <tr>
                             <th>Cod</th>
                             <th>Productos</th>
+                            <th>barra-ref_interna</th>
                             <th style="text-align: center;">Precio Caja</th>
                             <th style="text-align: center;">Precio Display</th>
                             <th style="text-align: center;">Precio Unidad</th>

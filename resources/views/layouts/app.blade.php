@@ -16,6 +16,8 @@
 
         <!-- Styles -->
         @livewireStyles
+
+        @stack("estiloscss")
     </head>
     <body class="font-sans antialiased">
         <x-banner />
@@ -41,5 +43,8 @@
         @stack('modals')
 
         @livewireScripts
+
+        @stack("javascriptjs")
+        @stack("eventsubmit-js")
     </body>
 </html>

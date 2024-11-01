@@ -5,3 +5,7 @@
 [x-cloak] {
     display: none;
 }
+
+.pointer-events-none {
+    pointer-events: none
+}
